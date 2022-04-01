@@ -7,8 +7,10 @@
 7) diet plan creator api
 8) different cuisine api
 9) maps api for urgent dietician opinion near you
-10) calorie calculator API based on the food you have eaten on that day
+10) calorie calculator api based on the food you have eaten on that day
 11) healthy hotels api for nearby healthy food
 12) statistics api, to show weekly eating habit stats based on rough weekly intake
 13) ml forecasting api, to predict the over body stats at the end of successfully following a diet plan
 14) listing all eating disorders at one place for informing ppl ( as they are not well known) medical database api
+15) food news display api
+16) 

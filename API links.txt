@@ -1,3 +1,7 @@
+--------
+API List
+--------
+
 1. https://developer.edamam.com/edamam-docs-nutrition-api
 2. https://github.com/surhud004/Foodish#readme
 3. https://rapidapi.com/apidojo/api/tasty/
@@ -5,5 +9,33 @@
 5. https://developer.nutritionix.com/
 6. https://open.fda.gov/
 
+-------------------------------------
+Functionalities available in each API
+-------------------------------------
 
-1. 
+1] This returns the nutritional information based on a POST request of the recipe content. 
+The POST request submits the recipe content, specifically the recipe title and ingredient list. The response the API returns, 
+will contain the nutritional analysis for the recipe based on the information provided.
+
+This returns the nutritional analysis for the specified food text by extracting information from a short unstructured food text (usually an ingredient line and returns the following structured data for the text: quantity, measure and food,) 
+and if available: diet, health and allergen labels for the text. With the built in food logging feature, this allows for change of context. For example, “rice” will normally be matched to raw rice while, 
+with the food logging feature on, it will match to ready to eat ‘cooked rice.’
+
+2] A Node.js/Express.js REST API to GET a random picture of food dishes.
+
+3] 
+
+4]
+Fetches details for one food item by FDC ID
+Fetches details for multiple food items using input FDC IDs
+Returns a paged list of foods, in the 'abridged' format
+Returns a list of foods that matched search (query) keywords
+
+----------------------------------------
+
+1. Full Recipe Analysis, Individual Text Line Analysis (returns the nutritional analysis for the specified food text by extracting information from a short unstructured food text), Food Logging, Nutrient Guide
+2. a random picture of food dishes. The response time will likely be a few seconds long on the first request, because this app is running on a free Heroku dyno. Subsequent requests will behave as normal.
+3. API to query data about recipe, plan, ingredients, etc… as on official site
+4. FoodData Central is an integrated data system that provides expanded nutrient profile data and links to related agricultural and experimental research.
+5. Track what you eat, Nutrition database, Calculate your meals at select US restaurant chains, restaurant platform
+6. Not much use
