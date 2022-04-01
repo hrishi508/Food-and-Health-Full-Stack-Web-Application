@@ -1,0 +1,6 @@
+1. https://developer.edamam.com/edamam-docs-nutrition-api
+2. https://github.com/surhud004/Foodish#readme
+3. https://rapidapi.com/apidojo/api/tasty/
+4. https://fdc.nal.usda.gov/
+5. https://developer.nutritionix.com/
+6. https://open.fda.gov/
