@@ -15,6 +15,7 @@ Website idea:
 13. displaying global healthy food habits stats
 14. obesity (exercises)
 15. food wastage
+16. recipie completion from ingredients
 
 ----------------------------------------
 1. 
@@ -32,3 +33,4 @@ Website idea:
 13.
 14.
 15.
+16. 
