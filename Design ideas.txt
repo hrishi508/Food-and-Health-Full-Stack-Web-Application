@@ -17,3 +17,7 @@
 HTML Templates
 --------------
 1. https://html5up.net/
+
+
+----------------
+1. Hard code food items 
