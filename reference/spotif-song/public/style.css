@@ -1,0 +1,62 @@
+/* this file is loaded by index.html and styles the page */
+
+/* Define variables*/
+:root {
+  --primary-color: #FF6C37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 2em 1em;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+h1 {
+  font-style: italic;
+  color: var(--primary-color);
+  max-width: calc(100% - 5rem);
+  line-height: 1.1;
+}
+
+form {
+  background-color: #eee;
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 40ch;
+  border-radius: 10px;
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+form input[type=submit] {
+  color: #FFF;
+  background-color:  var(--primary-color);
+  border: 2px solid currentColor;
+  border-radius: .25em;
+  cursor: pointer;
+  line-height: 1.4em;
+  padding: 0.5em 1em;
+ 
+}
+
+form input[type=submit]:hover {
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid lightgrey;
+}
