@@ -2,3 +2,17 @@
 2. news - https://gnews.io/
 3. random food images api - https://github.com/surhud004/Foodish#readme
 4. random coffee images api - https://github.com/surhud004/Foodish#readme
+5. Get Similar Recipes - https://spoonacular.com/food-api/docs#Get-Similar-Recipes
+6. Get Analyzed Recipe Instructions - https://spoonacular.com/food-api/docs#Get-Analyzed-Recipe-Instructions
+7. Get Ingredient Substitutes - https://spoonacular.com/food-api/docs#Get-Ingredient-Substitutes
+8. Search Food Videos - https://spoonacular.com/food-api/docs#Search-Food-Videos
+9. Random Food Joke - https://spoonacular.com/food-api/docs#Random-Food-Joke
+10. Random Food Trivia - https://spoonacular.com/food-api/docs#Random-Food-Trivia
+11. Recipe Nutrition Label Widget - https://spoonacular.com/food-api/docs#Recipe-Nutrition-Label-Widget
+12. Recipe Nutrition Widget - https://spoonacular.com/food-api/docs#Recipe-Nutrition-Widget
+13. Recipe Taste Widget - https://spoonacular.com/food-api/docs#Recipe-Taste-Widget
+14. Equipment Widget - https://spoonacular.com/food-api/docs#Equipment-Widget
+15. Ingredients Widget - https://spoonacular.com/food-api/docs#Ingredients-Widget
+16. Price Breakdown Widget - https://spoonacular.com/food-api/docs#Price-Breakdown-Widget
+17. Create Recipe Card - https://spoonacular.com/food-api/docs#Get-Recipe-Card
+
