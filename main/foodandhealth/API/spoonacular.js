@@ -42,4 +42,4 @@ const getTaste = async (http, {id}) => {
     return http(config).then((res) => res.data);
 };
 
-module.exports = {searchRecipe, getSimilarRecipes, recipeCard, nutritionWidget};
+module.exports = {searchRecipe, getSimilarRecipes, recipeCard, nutritionWidget, getTaste};
