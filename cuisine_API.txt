@@ -1,2 +1,4 @@
 1. search recipes - https://spoonacular.com/food-api/docs#Search-Recipes-Complex
-2. news - https://gnews.io/, 
+2. news - https://gnews.io/
+3. random food images api - https://github.com/surhud004/Foodish#readme
+4. random coffee images api - https://github.com/surhud004/Foodish#readme
