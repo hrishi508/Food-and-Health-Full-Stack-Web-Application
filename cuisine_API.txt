@@ -1,0 +1,2 @@
+1. search recipes - https://spoonacular.com/food-api/docs#Search-Recipes-Complex
+2. news - https://gnews.io/, 
