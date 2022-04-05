@@ -16,3 +16,4 @@
 16. Price Breakdown Widget - https://spoonacular.com/food-api/docs#Price-Breakdown-Widget
 17. Create Recipe Card - https://spoonacular.com/food-api/docs#Get-Recipe-Card
 
+1, 5, 12, 13 
