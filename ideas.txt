@@ -1,6 +1,7 @@
 Website idea:
 
-1. Display multiple cuisines and healthy food options in them including calorie values, availability nearby, etc.
+0. Display nutritional information
+1. Display multiple cuisines and healthy food options
 2. Take health param (bmi, cholestrol, sugar, blood pressure) inputs - and 1. recommend nutritional requirements 2. recommend foods to avoid and to take 
 3. Take eating habits as input and suggest healthy options using psychology and ml api
 4. List all food disorders (as they are not well know) (med database api)
@@ -16,21 +17,31 @@ Website idea:
 14. obesity (exercises)
 15. food wastage
 16. recipie completion from ingredients
+17. search food items by ingredients (maybe incomplete)
+18. chat with professionals
+19. user goals, progress tracker, appointment scheduling, preferences, videochat, dashboard
 
 ----------------------------------------
-1. 
+1. https://suggestic.com/developers.html
 2. 
 3. 
 4. 
-5. 
-6. 
+5. https://suggestic.com/developers.html
+6. https://suggestic.com/developers.html
 7. 
 8. 
 9. 
-10.
+10. https://suggestic.com/developers.html
 11.
-12.
+12. https://www.programmableweb.com/api/zomato-foodie-index
 13.
 14.
 15.
-16. 
+16.
+17. https://suggestic.com/developers.html
+18. https://suggestic.com/developers.html
+19. https://suggestic.com/developers.html  
+
+*****************************************
+1. https://spoonacular.com/food-api/docs
+2. 
