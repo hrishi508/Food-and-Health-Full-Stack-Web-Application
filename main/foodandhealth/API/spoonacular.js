@@ -3,12 +3,13 @@ const https = require('https');
 const request = require('request');
 const BASE_URL = "https://api.spoonacular.com/recipes/";
 const key = "13bdda95b22b4294af6b4812f0a2bbc0";
+var food1;
 
 function searchRecipe (cuisine, diet) {
     var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
     request.get(url, function (error, response, body) {
         const data = JSON.parse(body);
-        console.log(data.results[0].title);
+        food1 = data.results[0].title;
     });
 };
 
