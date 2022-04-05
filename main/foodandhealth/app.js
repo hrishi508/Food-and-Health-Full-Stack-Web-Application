@@ -15,7 +15,7 @@ app.get("/", function (req, res) {
 
 app.get("/cuisines", function (req, res) {
 
-  res.sendFile(__dirname + "/views/html5up-phantom/landing.html");
+  res.sendFile(__dirname + "/views/cuisines.html");
 });
 
 var cuisine;
