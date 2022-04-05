@@ -36,7 +36,7 @@ var item;
 app.get("/food_item", function (req, res) {
   item = req.query.item;
   console.log(item);
-  res.sendFile(__dirname + "/views/cuisines.html");
+  res.sendFile(__dirname + "/views/food_item.html");
 });
 
 app.get("/news", function (req, res) {
