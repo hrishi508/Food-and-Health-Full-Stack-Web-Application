@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>EatHealthy</title>
@@ -47,23 +43,36 @@
 					</nav> -->
 
 				<!-- Main -->
-					<div id="main">
+					<!-- <div id="main">
 						<div class="inner">
-							<h1>Recipe</h1>
-							<span class="image main"><img src="<%= url_recipe %>"/></span>
-							<br><br>
+						<h1><center>RECIPE</center></h1>
+						<span class="image main"><center><img src="<%= url_recipe %>" width="1" height="600"/></center></span>
+						<br><br>
 
-							<h1>Nutrition</h1>
-							<span class="image main"><img src= "<%= "/images_nutrition/"+id+".png"%>"/></span>
-							<br><br> 
+						<h1><center>NUTRITION</center></h1>
+						<span class="image main"><center><img src= "<%= "/images_nutrition/"+id+".png"%>"/></center></span>
+						<br><br> 
 
 							
 
 						</div>
 						
-					</div>
+					</div> -->
 
-					
+				<center>
+					<div class="row">
+						<div class="column">
+							<h1><center>RECIPE</center></h1>
+							<span class="image main"><center><img src="<%= url_recipe %>" width="100" height="600"/></center></span>
+							<br><br>	
+						</div>
+						<div class="column">
+							<h1><center>NUTRITION</center></h1>
+							<span class="image main"><center><img src= "<%= "/images_nutrition/"+id+".png"%>" width="100" height="600"/></center></span>
+							<br><br> 
+						</div>
+					</div>
+				</center>					
 			</div>
 
 		<!-- Scripts -->
