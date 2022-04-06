@@ -37,7 +37,7 @@ app.get("/food_item_list", function (req, res) {
     request.get(url, function (error, response, body) {
         const data = JSON.parse(body);
         console.log(data);
-        res.render("food_item_list", {item1 : data.results[0].title, img1:data.results[0].image});
+        res.render("food_item_list", {item : data.results});
     });
   // res.sendFile(__dirname + "/views/food_item_list.html");
 });
