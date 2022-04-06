@@ -40,20 +40,21 @@ app.get("/food_item", async function (req, res) {
   console.log(item_id);
   // getSimilarRecipes(item_id);
   var data_recipe = await recipeCard(item_id);
-  // var data_nutrition = await nutritionWidget(item_id);
+  await nutritionWidget(item_id);
+  // await getTaste(item_id);
   // var data_taste = await getTaste(item_id);
   // console.log(data_nutrition);
   // console.log(data_recipe);
   // console.log(data_taste);
 
-  res.render("food_item", {url_recipe : data_recipe.url});
+  res.render("food_item", {url_recipe : data_recipe.url, id:item_id});
   // res.render("food_item_list", {url_recipe : data_recipe.url, url_nutrition : data_nutrition.url, url_taste : data_taste.url});
 });
 
 app.get("/news", async function (req, res) {
 
   var data = await searchNews();
-  console.log(data);
+  // console.log(data);
   res.render("news", {item : data});
 });
 
