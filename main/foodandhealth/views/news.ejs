@@ -53,7 +53,8 @@
 								<h1>TRENDING FOOD BLOGS</h1>
 							</header>
 							<section class="tiles">
-								<% for( var i = 0; i < Math.min(item.totalArticles,6); i++ ) { %>
+								<% var p = Math.floor((Math.random() * 5) + 0);
+								for( var i = p; i < p+6; i++ ) { %>
 									<article class=<%="style"+(i+1)%>>
 										<span class="image">
 											<img src= "<%= item.articles[i].image %>" width="300" height="300" />
