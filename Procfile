@@ -1,1 +1,1 @@
-web: node main/foodandhealth/app.js
+web: node app.js
