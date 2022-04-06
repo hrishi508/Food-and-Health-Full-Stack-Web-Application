@@ -67,7 +67,7 @@ app.get("/maintenance", function (req, res) {
   res.sendFile(__dirname + "/views/maintenance.html")
 })
 
-app.listen(process.env.PORT||3000, function () {
+app.listen(process.env.PORT, function () {
   console.log("Server running on port 3000");
 });
 
