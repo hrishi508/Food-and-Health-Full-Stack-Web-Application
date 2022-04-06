@@ -1,17 +1,28 @@
 const { response } = require('express');
 const https = require('https');
 const request = require('request');
+const axios = require('axios').default;
 const BASE_URL = "https://api.spoonacular.com/recipes/";
-const key = "13bdda95b22b4294af6b4812f0a2bbc0";
+const key = "bdee237076324d6a8f2c90d76047316d";
 
-function searchRecipe (cuisine, diet) {
-    var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
-    request.get(url, function (error, response, body) {
-        const data = JSON.parse(body);
-        console.log(data);
-    });
-};
-
+// function searchRecipe (cuisine, diet) {
+//     var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
+//     request.get(url, function (error, response, body) {
+//         const data = JSON.parse(body);
+//         console.log(data);
+//     });
+// };
+async function searchRecipe(cuisine, diet) {
+    try {
+      var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
+      const response = await axios.get(url);
+    //   console.log(response.data);
+      return response.data;
+    } 
+    catch (error) {
+      console.error(error);
+    }
+  }
 
 function getSimilarRecipes (id) {
     var url = BASE_URL + "recipes/" + id + "/similar?apiKey=" + key;
