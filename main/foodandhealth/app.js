@@ -63,6 +63,10 @@ app.get("/template", function (req, res) {
   res.sendFile(__dirname + "/views/sample_1.html");
 });
 
+app.get("/maintenance", function (req, res) {
+  res.sendFile(__dirname + "/views/maintenance.html")
+})
+
 app.listen(3000, function () {
   console.log("Server running on port 3000");
 });
