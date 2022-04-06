@@ -3,47 +3,43 @@ const https = require('https');
 const request = require('request');
 const BASE_URL = "https://api.spoonacular.com/recipes/";
 const key = "13bdda95b22b4294af6b4812f0a2bbc0";
-var food1;
 
 function searchRecipe (cuisine, diet) {
     var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
     request.get(url, function (error, response, body) {
         const data = JSON.parse(body);
-        food1 = data.results[0].title;
+        console.log(data.results[0].id);
     });
 };
 
 
-const getSimilarRecipes = async (http, {id}) => {
-    const config = {
-        method: "get",
-        url : `${BASE_URL}/recipes/${id}/similar?apiKey=${key}`,
-    };
-    return http(config).then((res) => res.data);
+function getSimilarRecipes (id) {
+    var url = BASE_URL + "recipes/" + id + "/similar?apiKey=" + key;
+    request.get(url, function (error, response, body) {
+        const data = JSON.parse(body);
+        console.log(data[0].id);
+    });
 };
 
-const recipeCard = async (http, {id}) => {
-    const config = {
-        method: "get",
-        url : `${BASE_URL}/recipes/${id}/card?apiKey=${key}`,
-    };
-    return http(config).then((res) => res.data);
+function recipeCard (id) {
+    var url = BASE_URL + "recipes/" + id + "/card?apiKey=" + key;
+    request.get(url, function (error, response, body) {
+        console.log(body);
+    });
 };
 
-const nutritionWidget = async (http, {id}) => {
-    const config = {
-        method: "get",
-        url : `${BASE_URL}/recipes/${id}/nutritionWidget.png?apiKey=${key}`,
-    };
-    return http(config).then((res) => res.data);
+function nutritionWidget (id) {
+    var url = BASE_URL + "recipes/" + id + "/nutritionWidget.png?apiKey=" + key;
+    request.get(url, function (error, response, body) {
+        const data = JSON.parse(body);
+    });
 };
 
-const getTaste = async (http, {id}) => {
-    const config = {
-        method: "get",
-        url : `${BASE_URL}/recipes/${id}/tasteWidget.json?apiKey=${key}`,
-    };
-    return http(config).then((res) => res.data);
+function getTaste (id) {
+    var url = BASE_URL + "recipes/" + id + "/tasteWidget.json?apiKey=" + key;
+    request.get(url, function (error, response, body) {
+        const data = HTML.parse(body);
+    });
 };
 
 module.exports = {searchRecipe, getSimilarRecipes, recipeCard, nutritionWidget, getTaste};
