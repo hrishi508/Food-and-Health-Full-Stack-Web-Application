@@ -8,7 +8,7 @@ function searchRecipe (cuisine, diet) {
     var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
     request.get(url, function (error, response, body) {
         const data = JSON.parse(body);
-        console.log(data.results[0].id);
+        console.log(data);
     });
 };
 
@@ -38,7 +38,9 @@ function nutritionWidget (id) {
 function getTaste (id) {
     var url = BASE_URL + "recipes/" + id + "/tasteWidget.json?apiKey=" + key;
     request.get(url, function (error, response, body) {
-        const data = HTML.parse(body);
+        // const data = HTML.parse(body);
+        const data = body.outerHTML;
+        console.log(data);
     });
 };
 

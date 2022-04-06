@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const http = require('http');
 const bodyParser = require("body-parser");
+const request = require('request');
 
 const {searchRecipe, getSimilarRecipes, recipeCard, nutritionWidget, getTaste} = require("./API/spoonacular");
 const {search} = require("./API/gnews");
-
+app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
@@ -28,10 +29,17 @@ app.get("/diet", function (req, res) {
 var diet;
 app.get("/food_item_list", function (req, res) {
   diet = req.query.diet;
-
-  searchRecipe(cuisine, diet);
-
-  res.sendFile(__dirname + "/views/food_item_list.html");
+  var str1 = "Pasta using ejs";
+  // searchRecipe(cuisine, diet);
+  const BASE_URL = "https://api.spoonacular.com/recipes/";
+  const key = "13bdda95b22b4294af6b4812f0a2bbc0";
+  var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
+    request.get(url, function (error, response, body) {
+        const data = JSON.parse(body);
+        console.log(data);
+        res.render("food_item_list", {item1 : data.results[0].title, img1:data.results[0].image});
+    });
+  // res.sendFile(__dirname + "/views/food_item_list.html");
 });
 
 app.get("/food_item", function (req, res) {
