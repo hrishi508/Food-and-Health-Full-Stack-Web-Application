@@ -24,7 +24,7 @@ async function searchRecipe(cuisine, diet) {
     {
       console.error(error);
     }
-  }
+};
 
 async function recipeCard (id) {
     try

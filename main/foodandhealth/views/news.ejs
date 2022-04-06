@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Trending Food Blogs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css1/main.css" />
+		<noscript><link rel="stylesheet" href="/css1/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<!-- <a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a> -->
+
+							<!-- Nav -->
+								<!-- <nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav> -->
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<!-- <nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/cuisines">Cuisines</a></li>
+							<li><a href="/news">News</a></li>
+							<li><a href="/template">Template</a></li>
+						</ul>
+					</nav> -->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>TRENDING FOOD BLOGS</h1>
+							</header>
+							<section class="tiles">
+								<% for( var i = 0; i < Math.min(item.totalArticles,6); i++ ) { %>
+									<article class=<%="style"+(i+1)%>>
+										<span class="image">
+											<img src= "<%= item.articles[i].image %>" width="300" height="300" />
+										</span>
+										<a href=<%=item.articles[i].url %> target="_blank">
+											<h2><%= item.articles[i].title %></h2>
+										</a>
+									</article>
+								<% } %>
+														
+							</section>
+							<!-- <span class="image main"><img src="images1/pic13.jpg" alt="" /></span> -->
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>

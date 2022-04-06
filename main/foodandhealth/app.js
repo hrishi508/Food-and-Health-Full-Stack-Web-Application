@@ -6,7 +6,7 @@ const request = require('request');
 const axios = require('axios');
 
 const {searchRecipe, getSimilarRecipes, recipeCard, nutritionWidget, getTaste} = require("./API/spoonacular");
-const {search} = require("./API/gnews");
+const {searchNews} = require("./API/gnews");
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -50,11 +50,11 @@ app.get("/food_item", async function (req, res) {
   // res.render("food_item_list", {url_recipe : data_recipe.url, url_nutrition : data_nutrition.url, url_taste : data_taste.url});
 });
 
-app.get("/news", function (req, res) {
+app.get("/news", async function (req, res) {
 
-  search();
-
-  res.sendFile(__dirname + "/views/trending_blogs.html");
+  var data = await searchNews();
+  console.log(data);
+  res.render("news", {item : data});
 });
 
 app.get("/template", function (req, res) {
