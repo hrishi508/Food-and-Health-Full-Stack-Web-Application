@@ -3,7 +3,7 @@ const https = require('https');
 const request = require('request');
 const axios = require('axios').default;
 const BASE_URL = "https://api.spoonacular.com/recipes/";
-const key = "91c7422e3eaf413497fbd2c6cd261d57";
+const key = "13bdda95b22b4294af6b4812f0a2bbc0";
 
 function getSimilarRecipes (id) {
     var url = BASE_URL + "recipes/" + id + "/similar?apiKey=" + key;
