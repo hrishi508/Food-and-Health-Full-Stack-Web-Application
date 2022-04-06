@@ -1,5 +1,5 @@
 const BASE_URL = "https://gnews.io/api/v4/";
-const key = "174a587f17d51b8b3cb68fb660be2a23";
+const key = "b19e9d586acf7acd07214dd58e2dd41f";
 const query = "food AND healthy";
 const axios = require('axios').default;
 
