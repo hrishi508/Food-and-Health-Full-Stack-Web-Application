@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Food Items</title>
+		<title>Elements - Phantom by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/css1/main.css" />
@@ -21,9 +21,9 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<!-- <a href="index.html" class="logo">
+								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a> -->
+								</a>
 
 							<!-- Nav -->
 								<!-- <nav>
@@ -49,26 +49,11 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-								<h1>FOOD ITEMS</h1>
-							</header>
-							<section class="tiles">
-								<% for( var i = 0; i < Math.min(item.length,6); i++ ) { %>
-									<article class=<%="style"+(i+1)%>>
-										<span class="image">
-											<img src= "<%= item[i].image %>" width="300" height="300" />
-										</span>
-										<a href=<%="/food_item?item="+ item[i].id %>>
-											<h2><%= item[i].title %></h2>
-										</a>
-									</article>
-								<% } %>
-														
-							</section>
-							<!-- <span class="image main"><img src="images1/pic13.jpg" alt="" /></span> -->
+							<h1>Recipe</h1>
+							<img src="<%= url_recipe %>"/>
+							<br><br>
 						</div>
 					</div>
-
 			</div>
 
 		<!-- Scripts -->

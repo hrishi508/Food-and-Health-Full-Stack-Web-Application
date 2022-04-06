@@ -30,31 +30,24 @@ app.get("/diet", function (req, res) {
 var diet;
 app.get("/food_item_list", async function (req, res) {
   diet = req.query.diet;
-  var str1 = "Pasta using ejs";
   var data = await searchRecipe(cuisine, diet);
-  console.log(data);
-  // const BASE_URL = "https://api.spoonacular.com/recipes/";
-  // const key = "13bdda95b22b4294af6b4812f0a2bbc0";
-  // var url = BASE_URL + "complexSearch?query=a&cuisine=" + cuisine + "&diet="+ diet + "&apiKey=" + key;
-  //   request.get(url, function (error, response, body) {
-  //       const data = JSON.parse(body);
-  //       console.log(data);
-  //       res.render("food_item_list", {item : data.results});
-  //   });
+  // console.log(data);
   res.render("food_item_list", {item : data.results});
-  // res.sendFile(__dirname + "/views/food_item_list.html");
 });
 
-app.get("/food_item", function (req, res) {
-  //item_id = req.query.item;
-  item_id = 716429;
+app.get("/food_item", async function (req, res) {
+  item_id = req.query.item;
+  console.log(item_id);
+  // getSimilarRecipes(item_id);
+  var data_recipe = await recipeCard(item_id);
+  // var data_nutrition = await nutritionWidget(item_id);
+  // var data_taste = await getTaste(item_id);
+  // console.log(data_nutrition);
+  // console.log(data_recipe);
+  // console.log(data_taste);
 
-  getSimilarRecipes(item_id);
-  recipeCard(item_id);
-  //nutritionWidget(item_id);
-  //getTaste(item_id);
-
-  res.sendFile(__dirname + "/views/food_item.html");
+  res.render("food_item", {url_recipe : data_recipe.url});
+  // res.render("food_item_list", {url_recipe : data_recipe.url, url_nutrition : data_nutrition.url, url_taste : data_taste.url});
 });
 
 app.get("/news", function (req, res) {
