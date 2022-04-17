@@ -1775,20 +1775,23 @@ input, select, textarea {
 		width: -ms-max-content;
 		width: max-content;
 		margin-bottom: 2em;
+		/* opacity: 0; Use this to change the opacity of the entire header before transition */
 	}
 
 		header.major > :first-child {
 			margin-bottom: 0;
 			width: calc(100% + 0.5em);
+			/* opacity: 0; Use this to change the opacity of only the heading part (first-child) of the header before transition  */
 		}
 
-			header.major > :first-child:after {
+			header.major > :first-child:after{
 				content: '';
 				background-color: #ffffff;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
+				/* opacity: 0; Use this to change the opacity of only the straight line below the heading part (first-child) of the header before transition  */
 			}
 
 		header.major > p {
@@ -1797,6 +1800,7 @@ input, select, textarea {
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			/* opacity: 0; Use this to change the opacity of only the content below the heading part (first-child) of the header before transition */
 		}
 
 		body.is-ie header.major > :first-child:after {
@@ -2793,7 +2797,7 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.85; /* Changes the opacity before transition, dafault - 0.85 */
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -2810,10 +2814,10 @@ input, select, textarea {
 				width: 100%;
 				z-index: 1;
 			}
-
+			
 			.tiles article:hover:before {
-				opacity: 0;
-			}
+				opacity: 0; /* Changes the opacity on hovering, default - 0 */
+			} 
 
 			.tiles article.is-transitioning {
 				-moz-transform: scale(0.95);

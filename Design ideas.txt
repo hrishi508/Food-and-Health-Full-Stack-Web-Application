@@ -1,3 +1,13 @@
+----------------
+Website design
+----------------
+1. favicon for website title
+2. animated spinner for loading time
+3. make text disappear with mouse hover
+4. add additional functionality
+5. 
+
+
 1. https://www.intechnic.com/blog/top-50-most-appetizing-designs-for-food-websites/
 2. https://www.sitebuilderreport.com/inspiration/food-websites
 3. https://www.awwwards.com/websites/food-drink/
