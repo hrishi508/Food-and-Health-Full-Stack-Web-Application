@@ -341,7 +341,7 @@ hr {
 		}
 
 		.row > .col-1 {
-			width: 8.33333%;
+			width: 50%;
 		}
 
 		.row > .off-1 {
@@ -349,7 +349,7 @@ hr {
 		}
 
 		.row > .col-2 {
-			width: 16.66667%;
+			width: 50%;
 		}
 
 		.row > .off-2 {
