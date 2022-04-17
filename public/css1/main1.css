@@ -2723,7 +2723,7 @@ hr {
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
-					opacity: 0;
+					opacity: 0.35;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
